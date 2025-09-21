@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Task 1 — Simple Layout (div + float)</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site">
+    <h1>Task 1 — Simple Layout</h1>
+    <p class="muted">Макет двумя колонками на float.</p>
+  </header>
+  
+<nav class="navbar">
+  <a href="task1.html">Task 1</a>
+  <a href="task2.html">Task 2</a>
+  <a href="task3.html">Task 3</a>
+</nav>
+
+  <main class="container">
+    <div class="card">
+      <div class="layout">
+        <div class="t1-header"><strong>Header</strong> — Title of the Website</div>
+        <div class="t1-nav">
+          <a href="#">Home</a>
+          <a href="#">Tasks</a>
+          <a href="#">About</a>
+          <a href="#">Contact</a>
+        </div>
+        <div class="clearfix">
+          <aside class="t1-sidebar">
+            <h3>Sidebar Menu</h3>
+            <ul>
+              <li>Item One</li>
+              <li>Item Two</li>
+              <li>Item Three</li>
+            </ul>
+            <p class="box">Sidebar с <code>float:left</code>.</p>
+          </aside>
+          <section class="t1-aside">
+            <h2>Main Content (Aside)</h2>
+            <p>Контент справа использует <code>float:right</code>. Фон, отступы, границы и навигация соответствуют требованиям.</p>
+          </section>
+        </div>
+        <div class="t1-footer">&copy; 2025 Simple Layout — All rights reserved.</div>
+      </div>
+    </div>
+  </main>
+</body>
+</html>
